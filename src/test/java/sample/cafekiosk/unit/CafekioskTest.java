@@ -1,5 +1,6 @@
 package sample.cafekiosk.unit;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import sample.cafekiosk.unit.beverage.Americano;
 import sample.cafekiosk.unit.beverage.Beverage;
@@ -28,6 +29,8 @@ class CafekioskTest {
 		// 자동화된 테스트 -> jUnit
 	}
 
+//	@DisplayName("음료 1개 추가 테스트")
+	@DisplayName("음료 1개를 추가하면 주문 목록에 담긴다.")
 	@Test
 	void add() {
 		CafeKiosk cafeKiosk = new CafeKiosk();
